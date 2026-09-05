@@ -621,3 +621,13 @@ p {
     flex-wrap: wrap;
   }
 }
+
+.workflow-grid {
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+}
