@@ -17,3 +17,9 @@ Copy these files into the existing repository, then:
     git push
 
 Cloudflare should deploy automatically from the connected GitHub repository.
+
+
+## 2026-09-07 vertical SEO pages
+- Added bakery, butcher/fresh food and florist landing pages under /shopify-delivery-date-picker/.
+- Added internal links from the pillar page and guides hub.
+- Added new URLs to sitemap.xml.
