@@ -1,336 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | No Time To Sleep</title>
-
-  <meta
-    name="description"
-    content="Contact No Time To Sleep about TruBytes Shopify apps, food ecommerce, or the chilled and frozen delivery pilot."
-  >
-
+  <meta name="description" content="Contact No Time To Sleep about TruBytes Shopify apps, food ecommerce or refrigerated delivery.">
+  <meta name="theme-color" content="#090a0b">
+  <link rel="canonical" href="https://notimetosleep.xyz/contact/">
+  <meta property="og:title" content="Contact | No Time To Sleep"><meta property="og:description" content="Talk to us about TruBytes, food ecommerce or refrigerated delivery."><meta property="og:type" content="website"><meta property="og:url" content="https://notimetosleep.xyz/contact/">
   <link rel="stylesheet" href="/styles.css">
 </head>
-
 <body>
-
-<header class="site-header">
-  <div class="container nav-wrapper">
-
-    <a href="/" class="logo">
-      NO TIME TO SLEEP<span>.</span>
-    </a>
-
-    <nav class="desktop-nav">
-      <a href="/trubytes/">TruBytes</a>
-      <a href="/cold-chain/">Cold Chain</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-
-    <button
-      class="menu-button"
-      id="menuButton"
-      aria-label="Open menu"
-      aria-expanded="false"
-    >
-      <span></span>
-      <span></span>
-    </button>
-
-  </div>
-
-  <nav class="mobile-nav" id="mobileNav">
-    <a href="/trubytes/">TruBytes</a>
-    <a href="/cold-chain/">Cold Chain</a>
-    <a href="/contact/">Contact</a>
-  </nav>
-</header>
-
-
+<header class="site-header"><div class="container nav-wrapper"><a href="/" class="logo">NO TIME TO SLEEP<span>.</span></a><nav class="desktop-nav"><a href="/trubytes/">TruBytes</a><a href="/cold-chain/">Cold Chain</a><a class="active" href="/contact/">Contact</a></nav><button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div><nav class="mobile-nav" id="mobileNav"><a href="/trubytes/">TruBytes</a><a href="/cold-chain/">Cold Chain</a><a class="active" href="/contact/">Contact</a></nav></header>
 <main>
+  <section class="hero"><div class="hero-glow hero-glow-one"></div><div class="container hero-content"><div class="eyebrow">Contact No Time To Sleep</div><h1>Let's talk about <span>something useful.</span></h1><p class="hero-copy">Shopify software, food ecommerce, refrigerated delivery or a problem you think technology could solve — we'd like to hear about it.</p></div></section>
 
-  <!-- HERO -->
-  <section class="hero">
-
-    <div class="hero-glow hero-glow-one"></div>
-
-    <div class="container hero-content">
-
-      <div class="eyebrow">
-        Contact No Time To Sleep
-      </div>
-
-      <h1>
-        Let's talk about
-        <span>something useful.</span>
-      </h1>
-
-      <p class="hero-copy">
-        Shopify software, food ecommerce, refrigerated delivery or a problem
-        you think technology could solve — we'd like to hear about it.
-      </p>
-
+  <section class="projects section"><div class="container"><div class="section-heading"><div><span class="section-label">Start here</span><h2>Tell us what you're working on.</h2></div><p>Choose the closest enquiry type and give us enough context to make the first conversation useful.</p></div>
+    <div class="form-shell">
+      <form class="contact-form" id="contactForm">
+        <div class="form-field full"><label for="enquiryType">I'm getting in touch about</label><select id="enquiryType" name="enquiryType" required><option value="">Choose one…</option><option value="Cold Chain - Food Business">Cold Chain — I'm a food business</option><option value="Cold Chain - Refrigerated Carrier">Cold Chain — I'm a refrigerated carrier</option><option value="TruBytes / Shopify">TruBytes / Shopify</option><option value="Partnership / General">Partnership / something else</option></select></div>
+        <div class="form-field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="form-field"><label for="company">Company</label><input id="company" name="company" autocomplete="organization"></div>
+        <div class="form-field"><label for="website">Website</label><input id="website" name="website" type="url" placeholder="https://"></div>
+        <div class="form-field full"><label for="details">Tell us a little more</label><textarea id="details" name="details" required placeholder="For food businesses: parcel volumes, chilled/frozen, weights and current carrier are useful. For carriers: areas covered, chilled/frozen capability and multi-drop capacity are useful."></textarea></div>
+        <p class="form-help">Submitting opens your email app with the details pre-filled. Nothing is sent until you press Send there.</p>
+        <div class="form-actions"><button type="submit" class="button button-primary">Prepare email</button><span class="form-status">Prefer email directly? <a class="project-link" href="mailto:mattrhoades1986@gmail.com">mattrhoades1986@gmail.com</a></span></div>
+      </form>
     </div>
+  </div></section>
 
-  </section>
-
-
-  <!-- CONTACT OPTIONS -->
-  <section class="projects section">
-
-    <div class="container">
-
-      <div class="project-grid">
-
-        <!-- FOOD BUSINESS -->
-        <article class="project-card featured-project" id="food-business">
-
-          <div class="project-top">
-            <div class="project-icon">01</div>
-            <span class="project-status">Cold Chain</span>
-          </div>
-
-          <div class="project-content">
-
-            <span class="project-category">
-              Food businesses
-            </span>
-
-            <h3>
-              Interested in temperature-controlled delivery?
-            </h3>
-
-            <p>
-              We're looking to speak with chilled and frozen ecommerce
-              businesses about how they currently fulfil orders and what a
-              refrigerated alternative would need to deliver.
-            </p>
-
-            <ul class="feature-list">
-              <li>Business name & website</li>
-              <li>Approximate parcels per week</li>
-              <li>Chilled, frozen or both</li>
-              <li>Typical parcel weight</li>
-              <li>Current carrier / delivery method</li>
-              <li>Your collection postcode</li>
-            </ul>
-
-          </div>
-
-          <div class="project-footer">
-
-            <a
-              href="mailto:mattrhoades1986@gmail.com?subject=Cold%20Chain%20-%20Food%20Business"
-              class="project-link"
-            >
-              Register interest
-              <span>↗</span>
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- CARRIER -->
-        <article class="project-card" id="carrier">
-
-          <div class="project-top">
-            <div class="project-icon">02</div>
-            <span class="project-status development">Carrier network</span>
-          </div>
-
-          <div class="project-content">
-
-            <span class="project-category">
-              Refrigerated carriers
-            </span>
-
-            <h3>
-              Have refrigerated multi-drop capacity?
-            </h3>
-
-            <p>
-              We're interested in speaking with refrigerated operators about
-              spare capacity, collection regions and the economics of
-              ecommerce parcel delivery.
-            </p>
-
-            <ul class="feature-list">
-              <li>Company name & website</li>
-              <li>Regions covered</li>
-              <li>Chilled / frozen capability</li>
-              <li>Multi-drop capability</li>
-              <li>Collection locations</li>
-              <li>Tracking, POD & temperature data</li>
-            </ul>
-
-          </div>
-
-          <div class="project-footer">
-
-            <a
-              href="mailto:mattrhoades1986@gmail.com?subject=Cold%20Chain%20-%20Refrigerated%20Carrier"
-              class="project-link"
-            >
-              Talk to us
-              <span>↗</span>
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- TRUBYTES -->
-        <article class="project-card">
-
-          <div class="project-top">
-            <div class="project-icon">03</div>
-            <span class="project-status">TruBytes</span>
-          </div>
-
-          <div class="project-content">
-
-            <span class="project-category">
-              Shopify merchants
-            </span>
-
-            <h3>
-              Got a Shopify problem?
-            </h3>
-
-            <p>
-              If you've hit an operational limitation in Shopify or have
-              feedback about one of our existing apps, we'd like to hear about
-              it.
-            </p>
-
-            <ul class="feature-list">
-              <li>Delivery & fulfilment</li>
-              <li>Order restrictions</li>
-              <li>Inventory rules</li>
-              <li>Operational workflows</li>
-            </ul>
-
-          </div>
-
-          <div class="project-footer">
-
-            <a
-              href="mailto:mattrhoades1986@gmail.com?subject=TruBytes%20Enquiry"
-              class="project-link"
-            >
-              Contact TruBytes
-              <span>↗</span>
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- GENERAL -->
-        <article class="project-card future-card">
-
-          <div class="future-content">
-
-            <span class="plus-icon">+</span>
-
-            <span class="project-category">
-              Something else?
-            </span>
-
-            <h3>
-              We're always interested in useful problems.
-            </h3>
-
-            <p>
-              If it doesn't fit neatly into one of the categories above,
-              that's absolutely fine.
-            </p>
-
-            <a
-              href="mailto:mattrhoades1986@gmail.com?subject=No%20Time%20To%20Sleep%20Enquiry"
-              class="project-link"
-            >
-              Send us a message →
-            </a>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="about section">
-
-    <div class="container about-grid">
-
-      <div class="about-heading">
-
-        <span class="section-label">What happens next?</span>
-
-        <h2>
-          A conversation, not a sales funnel.
-        </h2>
-
-      </div>
-
-      <div class="about-copy">
-
-        <p>
-          The cold-chain project is currently about understanding the real
-          operational and commercial requirements before building a large
-          platform.
-        </p>
-
-        <p>
-          If you're a food business or refrigerated carrier, the useful part
-          for us is understanding how things actually work today.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
+  <section class="compact-band"><div class="container compact-band-inner"><h2>A conversation, not a sales funnel.</h2><p>The cold-chain project is still validation-led. We want to understand how merchants and carriers actually operate before building a large platform.</p></div></section>
 </main>
-
-
-<footer class="site-footer">
-
-  <div class="container footer-inner">
-
-    <div>
-      <a href="/" class="logo footer-logo">
-        NO TIME TO SLEEP<span>.</span>
-      </a>
-    </div>
-
-    <div class="footer-links">
-      <a href="/">Home</a>
-      <a href="/trubytes/">TruBytes</a>
-      <a href="/cold-chain/">Cold Chain</a>
-    </div>
-
-    <div class="footer-copy">
-      © <span id="year"></span> No Time To Sleep
-    </div>
-
-  </div>
-
-</footer>
-
+<footer class="site-footer"><div class="container footer-inner"><div><a href="/" class="logo footer-logo">NO TIME TO SLEEP<span>.</span></a><p>Technology built from real-world problems.</p></div><div class="footer-links"><a href="/">Home</a><a href="/trubytes/">TruBytes</a><a href="/cold-chain/">Cold Chain</a></div><div class="footer-copy">© <span id="year"></span> No Time To Sleep</div></div></footer>
 <script src="/script.js"></script>
-
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const type = params.get('type');
+  const select = document.getElementById('enquiryType');
+  if (select && type) {
+    const map = { food: 'Cold Chain - Food Business', carrier: 'Cold Chain - Refrigerated Carrier', trubytes: 'TruBytes / Shopify' };
+    if (map[type]) select.value = map[type];
+  }
+</script>
 </body>
 </html>
