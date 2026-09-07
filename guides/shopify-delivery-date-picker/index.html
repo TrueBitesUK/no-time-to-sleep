@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Add a Delivery Date Picker to Shopify | 2026 Guide</title>
+  <meta name="description" content="How to add a delivery date picker to Shopify, including Shopify's free cart-page method, app blocks, limitations and when advanced scheduling rules are needed.">
+  <meta name="theme-color" content="#090a0b"><link rel="canonical" href="https://notimetosleep.xyz/guides/shopify-delivery-date-picker/">
+  <meta property="og:title" content="How to Add a Delivery Date Picker to Shopify"><meta property="og:description" content="A practical guide to Shopify delivery date selection, cart-page limits and advanced scheduling needs."><meta property="og:type" content="article"><meta property="og:url" content="https://notimetosleep.xyz/guides/shopify-delivery-date-picker/">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="trubytes-page article-page">
+<header class="site-header"><div class="container nav-wrapper"><a href="/" class="logo">NO TIME TO SLEEP<span>.</span></a><nav class="desktop-nav"><a href="/trubytes/">TruBytes</a><a href="/shopify-delivery-date-picker/">Delivery Date Manager</a><a class="active" href="/guides/">Guides</a><a href="/contact/">Contact</a></nav><button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div><nav class="mobile-nav" id="mobileNav"><a href="/trubytes/">TruBytes</a><a href="/shopify-delivery-date-picker/">Delivery Date Manager</a><a class="active" href="/guides/">Guides</a><a href="/contact/">Contact</a></nav></header>
+<main>
+  <section class="hero guide-hero"><div class="hero-glow hero-glow-one"></div><div class="container hero-content"><div class="eyebrow">Guide · Shopify Delivery Dates</div><h1>How to add a delivery date picker <span>to Shopify.</span></h1><p class="hero-copy">There are several ways to let Shopify customers choose a delivery date. The right option depends on whether you only need a calendar or whether delivery availability changes by product, cutoff, capacity, postcode or fulfilment method.</p><p class="hero-note">Updated September 2026 · Written from the perspective of a Shopify merchant and app developer.</p></div></section>
+
+  <section class="section tight-top"><div class="container article-layout"><article class="article-content">
+    <p class="lead">A delivery date picker sounds simple until a store has to answer questions like: <strong>Can this product be ready by Friday? Is the local van already full? Does this postcode qualify? Is this cake collection-only?</strong></p>
+
+    <h2 id="options">The main ways to add a Shopify delivery date picker</h2>
+    <p>For most stores there are three practical approaches: add a simple date field to the cart, use a Shopify theme app block, or use a dedicated delivery scheduling app.</p>
+
+    <h3>1. Shopify's free cart-page customization</h3>
+    <p><a class="project-link" href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes/common-customizations/add-date-picker" target="_blank" rel="noopener">Shopify publishes an official tutorial</a> for adding a jQuery date picker to the cart page. It stores the selected date as a cart attribute and can be useful when a merchant only needs a basic customer-selected date.</p>
+    <div class="callout"><strong>Important limitation:</strong> Shopify's own tutorial states that the customization works only on the cart page and does not work with drawer or pop-up cart styles.</div>
+    <p>The DIY approach is suitable when the merchant is comfortable editing theme code and does not need complex product lead times, order capacity, local-delivery zones or production tooling.</p>
+
+    <h3>2. A theme app block</h3>
+    <p>Shopify theme app extensions let apps provide blocks that merchants can add to compatible theme sections without the app editing theme code directly. This is generally cleaner to install and maintain than manually pasting snippets into a theme.</p>
+    <p>Theme app blocks still depend on where the theme supports app blocks, so the placement available to a merchant can vary by template and theme architecture.</p>
+
+    <h3>3. A dedicated delivery scheduling app</h3>
+    <p>A dedicated Shopify delivery date app becomes more useful when the valid date depends on more than the weekday. Examples include:</p>
+    <ul><li>different preparation times by product</li><li>daily order or product limits</li><li>time-slot capacity</li><li>cutoff times that add lead days</li><li>postcode or radius-based local delivery</li><li>collection locations with different schedules</li><li>incoming stock or seasonal availability</li></ul>
+
+    <h2 id="product-rules">Why product lead times matter</h2>
+    <p>A store-wide lead time works until the basket contains products that take different amounts of time to prepare. A brownie box might be ready tomorrow while a personalised cake needs five days.</p>
+    <p>In that situation, the useful delivery-date logic is not simply “today + 2 days”. The basket should respect the most restrictive relevant product rule so the customer cannot select a date the merchant cannot meet.</p>
+
+    <h2 id="capacity">Delivery date capacity is different from inventory</h2>
+    <p>Inventory answers how many units are available. Delivery capacity answers how much work a business can accept for a specific day or slot.</p>
+    <p>A bakery may have enough ingredients for 100 cakes but only enough labour to make 12 celebration cakes on Saturday. A florist may have stock but only 60 local-delivery stops available on Valentine's Day. Those are scheduling-capacity problems.</p>
+
+    <h2 id="local-delivery">Local delivery adds another layer</h2>
+    <p>Local delivery often needs postcode eligibility, delivery radius, minimum order value, delivery price, available weekdays and capacity. Pickup can need a different set of days and time slots again.</p>
+    <p>For stores that offer shipping, pickup and local delivery together, treating them as separate fulfilment methods usually gives the merchant more useful control than one shared calendar.</p>
+
+    <h2 id="trubytes">Where TruBytes fits</h2>
+    <p><a class="project-link" href="/shopify-delivery-date-picker/">TruBytes Delivery Date Manager</a> is built for merchants where the products in the basket affect when and how the order can be fulfilled. It combines cart-page date selection with product lead times, capacity rules, postcode/local-delivery logic, Draft Order editing and production lists.</p>
+    <p>The current public storefront block is designed for the cart page. It does not currently provide cart-drawer or product-page date selection, and the public version does not place the picker inside Shopify checkout.</p>
+
+    <h2 id="checklist">A practical setup checklist</h2>
+    <ol><li>Decide which fulfilment methods need scheduling.</li><li>List the weekdays each method can actually fulfil.</li><li>Set your default lead time and daily cutoff.</li><li>Identify products that need longer preparation or restricted days.</li><li>Define daily order, product or slot capacity where needed.</li><li>Add blackout dates and seasonal incoming dates.</li><li>Test a basket containing your most restrictive products.</li><li>Check what staff need to prepare for each delivery day.</li></ol>
+
+    <div class="article-cta"><span class="section-label">TruBytes</span><h2>Need more than a basic Shopify date field?</h2><p>Try the Free plan and configure up to five active delivery rules around your own products and fulfilment operation.</p><a class="button button-primary" href="https://apps.shopify.com/trubytes-delivery-date-picker" target="_blank" rel="noopener">View TruBytes on Shopify</a></div>
+  </article>
+  <aside class="article-sidebar"><div class="toc-card"><strong>In this guide</strong><a href="#options">Ways to add a date picker</a><a href="#product-rules">Product lead times</a><a href="#capacity">Capacity</a><a href="#local-delivery">Local delivery</a><a href="#trubytes">Where TruBytes fits</a><a href="#checklist">Setup checklist</a></div></aside>
+  </div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div><a href="/" class="logo footer-logo">NO TIME TO SLEEP<span>.</span></a><p>Practical Shopify software and guides.</p></div><div class="footer-links"><a href="/guides/">Guides</a><a href="/shopify-delivery-date-picker/">Delivery Date Manager</a><a href="/trubytes/support/">Support</a></div><div class="footer-copy">© <span id="year"></span> No Time To Sleep</div></div></footer>
+<script src="/script.js"></script>
+</body></html>
